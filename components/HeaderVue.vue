@@ -52,7 +52,6 @@
                 </div>
             </nav>
         </div>
-        <div class="h-20"></div>
 
         <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
             <div class="fixed inset-0 z-10" />
@@ -103,6 +102,7 @@
             </DialogPanel>
         </Dialog>
     </header>
+    <div class="h-20 w-ful"></div>
 </template>
   
 <script setup>
@@ -136,11 +136,11 @@ const navItems = ref([
         name: 'ÜRÜNLER',
         href: '#',
         subItems: [
-            { name: 'YARIŞMALAR', description: 'Bir projeyi gerçekleştirmek mi istiyorsunuz?', href: '#' },
-            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '#' },
+            { name: 'YARIŞMALAR', description: 'Bir projeyi gerçekleştirmek mi istiyorsunuz?', href: '/yarismalar' },
+            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '/girisimciler' },
         ]
     },
-    { name: 'HAKKIMIZDA', href: '#' }
+    { name: 'HAKKIMIZDA', href: '/hakkimizda' }
 ]);
 
 const mobileMenuOpen = ref(false)
