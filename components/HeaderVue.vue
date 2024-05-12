@@ -2,11 +2,11 @@
     <header class="absolute inset-x-0 top-0 z-50">
         <div :class="['fixed w-full transition-all duration-300', hasScrolled ? 'bg-white shadow-md' : 'bg-transparent']">
             <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
-                <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5">
+                <div class="flex rounded-full bg-indigo-600">
+                    <nuxt-link href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">SOLCE</span>
-                        <img class="h-12 w-auto" src="~/assets/pictures/logo.jpg" alt="" />
-                    </a>
+                        <img class="h-12 w-auto" src="~/assets/pictures/logo.png" alt="" />
+                    </nuxt-link>
                 </div>
                 <div class="flex lg:hidden">
                     <button type="button"
@@ -43,7 +43,7 @@
                         </nuxt-link>
                     </template>
                 </PopoverGroup>
-                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div class="hidden lg:flex lg:justify-end">
                     <nuxt-link to="/giris"
                         class="text-sm font-semibold leading-6 text-indigo-600 px-5 py-1 border-2 border-indigo-600 rounded-xl hover:shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white flex justify-center items-center gap-x-2">
                         Giriş Yap
@@ -61,7 +61,7 @@
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">SOLCE</span>
-                        <img class="h-8 w-auto" src="~/assets/pictures/logo.jpg" alt="SOLCE" />
+                        <img class="h-8 w-auto" src="~/assets/pictures/logo.png" alt="SOLCE" />
                     </a>
                     <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
                         <span class="sr-only">Menüyü kapat</span>
