@@ -6,9 +6,10 @@
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
                         <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">crowdsourcing
+                            kullanımı, güvenilir ve sürekli yenilik için</p>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">Sorun çözücülerimizden oluşan crowd, 200'den
+                            fazla farklı projeye çözümler ve fikirler ile katkıda bulunmuştur.</p>
                         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                             <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
@@ -32,23 +33,23 @@
 </template>
   
 <script setup>
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
+import { CircleStackIcon, LockClosedIcon, ServerIcon, UserGroupIcon } from '@heroicons/vue/20/solid'
 
 const features = [
     {
-        name: 'Push to deploy.',
+        name: 'Sonuç varsa öde',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+            'Sorununuz başarıyla çözüldüğünde ödeme yaparsınız! Belirli sonuçlarınızı elde etmek için risksiz bir yol.',
+        icon: CircleStackIcon,
     },
     {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'Takımı oluştur',
+        description: 'Biz, katılım için engel olmayan açık bir platformuz. Crowd Oluşturma metodolojimiz bizi farklı kılar.',
+        icon: UserGroupIcon,
     },
     {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        name: 'Toplama noktası',
+        description: 'Solce, ödül kaydı, yarışma başvuruları, çözüm ekibi oluşturma ve resmi değerlendirme için bir merkez olarak hizmet vermektedir.',
         icon: ServerIcon,
     },
 ]
