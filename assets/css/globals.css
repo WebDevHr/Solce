@@ -1,0 +1,25 @@
+/* global.css */
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #d6d6d6;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3d3d3d;
+}
