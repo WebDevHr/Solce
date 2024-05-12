@@ -20,7 +20,7 @@
                     <div class="mt-2">
                         <input id="name" name="name" type="text" autocomplete="name" required="true"
                             placeholder="Adınız girin ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
                 <div>
@@ -28,7 +28,7 @@
                     <div class="mt-2">
                         <input id="familyName" name="familyName" type="text" autocomplete="familyName" required="true"
                             placeholder="Soyadınız girin ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
                 <div>
@@ -36,7 +36,7 @@
                     <div class="mt-2">
                         <input id="email" name="email" type="email" autocomplete="email" required="true"
                             placeholder="E-Postanızı giriniz ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
 
@@ -47,13 +47,13 @@
                     <div class="mt-2">
                         <input id="password" name="password" type="password" autocomplete="current-password" required="true"
                             placeholder="Şifrenizi giriniz ... "
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
 
                 <div class="pt-5">
                     <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Üye
+                        class="flex w-full justify-center rounded-md bg-green-600 px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Üye
                         Ol</button>
                 </div>
             </form>
@@ -61,8 +61,8 @@
             <p class="mt-5 text-center text-sm text-gray-500">
                 Hesabınız Var Mı?
                 {{ ' ' }}
-                <nuxt-link to="/giris" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Giriş
-                    yap</nuxt-link>
+                <nuxt-link to="/giris" class="font-semibold leading-6 text-green-600 hover:text-green-500">Giriş
+                    Yap</nuxt-link>
             </p>
         </div>
     </div>

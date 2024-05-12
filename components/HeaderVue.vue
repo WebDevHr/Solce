@@ -2,7 +2,7 @@
     <header class="absolute inset-x-0 top-0 z-50">
         <div :class="['fixed w-full transition-all duration-300', hasScrolled ? 'bg-white shadow-md' : 'bg-transparent']">
             <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
-                <div class="flex rounded-full bg-indigo-600">
+                <div class="flex rounded-full bg-green-600">
                     <nuxt-link href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">SOLCE</span>
                         <img class="h-12 w-auto" src="~/assets/pictures/logo.png" alt="" />
@@ -21,14 +21,14 @@
                         <Popover v-if="item.subItems" class="relative">
                             <template v-slot="{ open }">
                                 <PopoverButton
-                                    class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 pr-3 pl-5 py-1 rounded-xl border-2 border-transparent hover:border-indigo-600 transition-all duration-300">
+                                    class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 pr-3 pl-5 py-1 rounded-xl border-2 border-transparent hover:border-green-600 transition-all duration-300">
                                     {{ item.name }}
                                     <ChevronDownIcon
                                         :class="['h-5 w-5 flex-none transition-transform duration-300', open ? 'rotate-180' : '']"
                                         aria-hidden="true" />
                                 </PopoverButton>
                                 <PopoverPanel
-                                    class="absolute z-10 mt-[22px] border-t-8 border-indigo-600 bg-white shadow-lg rounded-xl w-52 overflow-hidden focus:border-none">
+                                    class="absolute z-10 mt-[22px] border-t-8 border-green-600 bg-white shadow-lg rounded-xl w-52 overflow-hidden focus:border-none">
                                     <template v-for="subItem in item.subItems" :key="subItem.name">
                                         <nuxt-link :to="subItem.href" class="block px-4 py-2 text-sm hover:bg-gray-50">
                                             {{ subItem.name }}
@@ -38,14 +38,14 @@
                             </template>
                         </Popover>
                         <nuxt-link v-else :to="item.href"
-                            class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 px-5 py-1 border-2 rounded-xl border-transparent hover:border-indigo-600 transition-all duration-300">
+                            class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 px-5 py-1 border-2 rounded-xl border-transparent hover:border-green-600 transition-all duration-300">
                             {{ item.name }}
                         </nuxt-link>
                     </template>
                 </PopoverGroup>
                 <div class="hidden lg:flex lg:justify-end">
                     <nuxt-link to="/giris"
-                        class="text-sm font-semibold leading-6 text-indigo-600 px-5 py-1 border-2 border-indigo-600 rounded-xl hover:shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white flex justify-center items-center gap-x-2">
+                        class="text-sm font-semibold leading-6 text-green-600 px-5 py-1 border-2 border-green-600 rounded-xl hover:shadow-md transition-all duration-300 hover:bg-green-600 hover:text-white flex justify-center items-center gap-x-2">
                         Giriş Yap
                         <ArrowRightIcon class="h-4 w-4" aria-hidden="true" />
                     </nuxt-link>
