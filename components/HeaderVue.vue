@@ -58,10 +58,10 @@
             <DialogPanel
                 class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div class="flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <nuxt-link to="/" class="-m-1.5 p-1.5" @click="mobileMenuOpen = false">
                         <span class="sr-only">SOLCE</span>
                         <img class="h-8 w-auto" src="~/assets/pictures/logo.png" alt="SOLCE" />
-                    </a>
+                    </nuxt-link>
                     <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
                         <span class="sr-only">Menüyü kapat</span>
                         <XMarkIcon class="h-6 w-6" aria-hidden="true" />
@@ -69,38 +69,44 @@
                 </div>
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6">
-                            <Disclosure as="div" class="-mx-3" v-slot="{ open }">
-                                <DisclosureButton
-                                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                    Product
-                                    <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']"
-                                        aria-hidden="true" />
-                                </DisclosureButton>
-                                <DisclosurePanel class="mt-2 space-y-2">
-                                    <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name"
-                                        as="a" :href="item.href"
-                                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                        {{ item.name }}</DisclosureButton>
-                                </DisclosurePanel>
-                            </Disclosure>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                        <div class="space-y-2 py-6 mt-10">
+                            <!-- Dynamic navItems for mobile -->
+                            <template v-for="item in navItems" :key="item.name">
+                                <div v-if="item.subItems">
+                                    <Disclosure as="div" v-slot="{ open }">
+                                        <DisclosureButton
+                                            class="flex w-full items-center justify-between rounded-xl py-1 px-5 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50 hover:text-orange-600 border-2 border-transparent hover:border-orange-600 transition-all duration-300">
+                                            {{ item.name }}
+                                            <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']"
+                                                aria-hidden="true" />
+                                        </DisclosureButton>
+                                        <DisclosurePanel class="mt-2 ml-5 space-y-2">
+                                            <nuxt-link v-for="subItem in item.subItems" :key="subItem.name"
+                                                :to="subItem.href"
+                                                class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-orange-600"
+                                                @click="mobileMenuOpen = false">
+                                                {{ subItem.name }}
+                                            </nuxt-link>
+                                        </DisclosurePanel>
+                                    </Disclosure>
+                                </div>
+                                <nuxt-link v-else :to="item.href"
+                                    class="block text-sm font-semibold leading-6 text-gray-900 hover:text-orange-600 px-5 py-1 border-2 rounded-xl border-transparent hover:border-orange-600 transition-all duration-300"
+                                    @click="mobileMenuOpen = false">
+                                    {{ item.name }}
+                                </nuxt-link>
+                            </template>
                         </div>
-                        <div class="py-6">
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                Giriş Yap
-                            </a>
-                        </div>
+                        <nuxt-link to="/giris"
+                            class="block text-sm font-semibold leading-6 text-gray-900 hover:text-orange-600 px-5 py-2 transition-all duration-300"
+                            @click="mobileMenuOpen = false">
+                            Giriş Yap
+                        </nuxt-link>
                     </div>
                 </div>
             </DialogPanel>
         </Dialog>
+
     </header>
     <div class="h-20 w-ful"></div>
 </template>
