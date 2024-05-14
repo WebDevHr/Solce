@@ -9,19 +9,20 @@
                     </nuxt-link>
                 </div>
                 <div class="flex lg:hidden">
-                    <button type="button"
-                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-sky-600"
+                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                         @click="mobileMenuOpen = true">
                         <span class="sr-only">Ana menüyü aç</span>
                         <Bars3Icon class="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <PopoverGroup class="hidden lg:flex lg:gap-x-5">
+                <PopoverGroup class="hidden lg:flex lg:gap-x-5 ml-24">
                     <template v-for="item in navItems" :key="item.name">
                         <Popover v-if="item.subItems" class="relative">
                             <template v-slot="{ open }">
                                 <PopoverButton
-                                    class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-sky-600 hover:text-sky-600 pr-3 pl-5 py-1 rounded-xl border-2 border-transparent hover:border-sky-600 transition-all duration-300">
+                                    class="flex items-center gap-x-1 text-sm font-semibold leading-6 
+                                     hover:text-sky-600 pr-3 pl-5 py-1 rounded-xl border-2 border-transparent hover:border-sky-600 transition-all duration-300"
+                                    :class="[hasScrolled ? 'text-sky-600' : 'text-white']">
                                     {{ item.name }}
                                     <ChevronDownIcon
                                         :class="['h-5 w-5 flex-none transition-transform duration-300', open ? 'rotate-180' : '']"
@@ -44,8 +45,9 @@
                                 </transition>
                             </template>
                         </Popover>
-                        <nuxt-link v-else :to="item.href"
-                            class="text-sm font-semibold leading-6 text-sky-600 hover:text-sky-600 px-5 py-1 border-2 rounded-xl border-transparent hover:border-sky-600 transition-all duration-300">
+                        <nuxt-link v-else :to="item.href" class="text-sm font-semibold leading-6 hover:text-sky-600 px-5 py-1 border-2 rounded-xl 
+                            border-transparent hover:border-sky-600 transition-all duration-300"
+                            :class="[hasScrolled ? 'text-sky-600' : 'text-white']">
                             {{ item.name }}
                         </nuxt-link>
                     </template>

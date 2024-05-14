@@ -8,6 +8,7 @@
                     <BreadCrumbsVue />
                 </div>
             </div>
+            <ChallengesListOfChallenges />
         </div>
     </div>
 </template>
