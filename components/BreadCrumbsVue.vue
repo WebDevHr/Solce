@@ -1,6 +1,6 @@
 <template>
-    <nav aria-label="breadcrumb" class="border-t border-b py-5">
-        <ol class="flex space-x-2 text-sm text-sky-600 mx-auto max-w-7xl px-6 lg:px-8">
+    <nav aria-label="breadcrumb" class=" py-5 bg-gradient-to-t from-black to-transparent">
+        <ol class="flex space-x-2 text-sm text-sky-600 mx-auto max-w-7xl px-6 lg:px-8 font-bold">
             <li v-for="(breadcrumb, index) in breadcrumbs" :key="breadcrumb.path" class="flex items-center">
                 <nuxt-link v-if="breadcrumb.clickable" :to="breadcrumb.path"
                     class="flex gap-x-1 justify-center items-center text-sky-600 hover:text-sky-400">
@@ -31,7 +31,7 @@ const breadcrumbs = computed(() => {
         const path = '/' + paths.slice(0, index + 1).join('/')
         return {
             path,
-            name: segment.charAt(0).toUpperCase() + segment.slice(1), // Capitalize the first letter
+            name: segment.toUpperCase().replace("_", " "), // Capitalize
             clickable: index < paths.length - 1
         }
     })

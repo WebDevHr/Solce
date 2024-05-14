@@ -151,7 +151,7 @@ const navItems = ref([
         href: '#',
         subItems: [
             { name: 'YARIŞMALAR', description: 'Bir projeyi gerçekleştirmek mi istiyorsunuz?', href: '/yarismalar' },
-            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '/girisimciler' },
+            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '/girisimcilere_destek' },
         ],
     },
     { name: 'HAKKIMIZDA', href: '/hakkimizda' }
