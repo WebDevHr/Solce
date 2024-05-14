@@ -4,3 +4,8 @@
         <HomeFeatureVue />
     </div>
 </template>
+
+
+<script setup>
+
+</script>

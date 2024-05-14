@@ -20,7 +20,7 @@
                     <div class="mt-2">
                         <input id="name" name="name" type="text" autocomplete="name" required="true"
                             placeholder="Adınız girin ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
                 <div>
@@ -28,15 +28,15 @@
                     <div class="mt-2">
                         <input id="familyName" name="familyName" type="text" autocomplete="familyName" required="true"
                             placeholder="Soyadınız girin ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
                 <div>
-                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">E-posta Adresi</label>
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">E-Posta Adresi</label>
                     <div class="mt-2">
                         <input id="email" name="email" type="email" autocomplete="email" required="true"
                             placeholder="E-Postanızı giriniz ..."
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
 
@@ -47,13 +47,13 @@
                     <div class="mt-2">
                         <input id="password" name="password" type="password" autocomplete="current-password" required="true"
                             placeholder="Şifrenizi giriniz ... "
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" />
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" />
                     </div>
                 </div>
 
                 <div class="pt-5">
                     <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-orange-600 px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">Üye
+                        class="flex w-full justify-center rounded-md bg-sky-600 px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">Üye
                         Ol</button>
                 </div>
             </form>
@@ -61,7 +61,7 @@
             <p class="mt-5 text-center text-sm text-gray-500">
                 Hesabınız Var Mı?
                 {{ ' ' }}
-                <nuxt-link to="/giris" class="font-semibold leading-6 text-orange-600 hover:text-orange-500">Giriş
+                <nuxt-link to="/giris" class="font-semibold leading-6 text-sky-600 hover:text-sky-500">Giriş
                     Yap</nuxt-link>
             </p>
         </div>
