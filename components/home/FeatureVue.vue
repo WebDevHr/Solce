@@ -5,10 +5,10 @@
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
-                        <h2 class="text-base font-semibold leading-7 text-sky-500">Fikirleri gerçekleştirelim</h2>
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        <h1 class="text-base font-semibold leading-7 text-sky-500 my-5">Fikirleri gerçekleştirelim</h1>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                             Kitle Kaynak kullanımı, güvenilir ve sürekli yenilik için
-                        </p>
+                        </h1>
                         <p class="mt-6 text-lg leading-8 text-gray-300">
                             Sorun çözücülerimizden oluşan crowd, 200'den fazla farklı projeye çözümler ve fikirler ile
                             katkıda bulunmuştur.

@@ -17,8 +17,8 @@
                     </div>
                 </div> -->
                 <div class="text-center">
-                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">SOL-CE</h1>
-                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">SOLUTION CENTER</h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl my-3">SOL-CE</h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl my-3">SOLUTION CENTER</h1>
 
                     <p class="mt-6 text-lg leading-8 text-gray-400">Yeniliği Kucaklayın, Çözümleri Birleştirin:
                         AR-GE'nizi Optimize Edin, Girişimci ve Yatırımcıları Bir Araya Getirin</p>
