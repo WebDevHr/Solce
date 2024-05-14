@@ -10,6 +10,7 @@
             </div>
         </div>
         <AboutusAboutUsHeroVue />
+        <AboutusTeamVue />
     </div>
 </template>
   
