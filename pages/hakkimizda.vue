@@ -1,10 +1,21 @@
 <template>
     <div>
-        <div class="relative md:h-[800px] sm:h-[500px] h-[400px] background-gradient-black-to-bottom">
+        <div class="relative background-gradient-black-to-bottom">
             <NuxtParticles id="tsparticles11" :options="options"></NuxtParticles>
-            <h1 class="text-white">
-                hakkimizda
-            </h1>
+            <div class="bg-[url('/pictures/aboutus-header-image.png')] bg-cover bg-center">
+                <div class="bg-black/50">
+                    <PagesHeader />
+                    <BreadCrumbsVue />
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Biz Kimiz</h1>
+            <p>HeroX, küresel topluluktaki herkesin bir meydan okuma yaratmasına veya yayımlanan bir meydan okumaya çözüm
+                sunmasına olanak tanıyan bir kitlesel kaynak platformudur.</p>
+            <p>Sorunları çözücülerle buluşturuyoruz ve küresel topluluğa başvurmanın, kendi ağınızın sağlayabileceğinden
+                daha
+                zengin ve geniş çözümler sunabileceğine inanıyoruz.</p>
         </div>
     </div>
 </template>
@@ -12,7 +23,6 @@
 <script setup>
 import options from '~/assets/particles/particles-color.json'
 
-// import { tsParticles } from 'tsparticles-engine'
 import { loadFull } from 'tsparticles'
 if (process.client) {
     await loadFull(tsParticles)

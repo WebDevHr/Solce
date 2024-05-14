@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white border-t border-gray-200 mt-10">
+    <footer class="bg-white border-gray-200">
         <div class="bg-[#06021f]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div class="md:flex md:items-center md:justify-between">
@@ -63,37 +63,37 @@ const footerLinks = [
     {
         title: 'Çözümler',
         links: [
-            { name: 'Pazarlama', url: '/pazarlama' },
-            { name: 'Analiz', url: '/analiz' },
-            { name: 'Ticaret', url: '/ticaret' },
-            { name: 'İçgörüler', url: '/icgoruler' },
+            { name: 'Pazarlama', url: '' },
+            { name: 'Analiz', url: '' },
+            { name: 'Ticaret', url: '' },
+            { name: 'İçgörüler', url: '' },
         ],
     },
     {
         title: 'Destek',
         links: [
-            { name: 'Fiyatlandırma', url: '/fiyatlandirma' },
-            { name: 'Dokümantasyon', url: '/dokumantasyon' },
-            { name: 'Rehberler', url: '/rehberler' },
-            { name: 'API Durumu', url: '/api-durumu' },
+            { name: 'Fiyatlandırma', url: '' },
+            { name: 'Dokümantasyon', url: '' },
+            { name: 'Rehberler', url: '' },
+            { name: 'API Durumu', url: '' },
         ],
     },
     {
         title: 'Şirket',
         links: [
-            { name: 'Hakkında', url: '/hakkinda' },
-            { name: 'Blog', url: '/blog' },
-            { name: 'İş Olanakları', url: '/is-olanaklari' },
-            { name: 'Basın', url: '/basin' },
-            { name: 'Ortaklar', url: '/ortaklar' },
+            { name: 'Hakkında', url: '' },
+            { name: 'Blog', url: '' },
+            { name: 'İş Olanakları', url: '' },
+            { name: 'Basın', url: '' },
+            { name: 'Ortaklar', url: '' },
         ],
     },
     {
         title: 'Hukuki',
         links: [
-            { name: 'Talep', url: '/talep' },
-            { name: 'Gizlilik', url: '/gizlilik' },
-            { name: 'Şartlar', url: '/sartlar' },
+            { name: 'Talep', url: '' },
+            { name: 'Gizlilik', url: '' },
+            { name: 'Şartlar', url: '' },
         ],
     },
 ];

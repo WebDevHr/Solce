@@ -22,7 +22,8 @@ export default defineNuxtConfig({
         wght: '200..900',
         ital: '200..700',
       },
-      Ubuntu: [100, 200, 300, 400, 500]
+      Ubuntu: [100, 200, 300, 400, 500],
+      Oswald: [100, 200, 300, 400, 500, 600, 700],
     }
   },
   particles: {

@@ -2,6 +2,9 @@
     <div>
         <HomeHeroVue />
         <HomeFeatureVue />
+        <HomeHowWeWorkWithYou />
+        <HomeJoinUs />
+        <HomeTrustedLogosVue />
     </div>
 </template>
 
