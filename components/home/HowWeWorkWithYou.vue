@@ -21,8 +21,10 @@
             </div>
         </div>
         <div class="bg-gradient-to-b from-[#06021f] to-transparent">
-            <div class="bg-gradient-to-t from-[#06021f] to-transparent">
-                <h1 class="text-3xl font-bold text-white">Neden kitle kaynak platformlarına ihtiyaç duyarız?</h1>
+            <div class="bg-gradient-to-t from-[#06021f] to-transparent py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                    <h1 class="">Neden kitle kaynak platformlarına ihtiyaç duyarız?</h1>
+                </div>
             </div>
         </div>
     </div>
