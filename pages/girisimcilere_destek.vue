@@ -1,12 +1,15 @@
 <template>
     <div>
-        <div class="relative background-gradient-black-to-bottom">
+        <div class="relative">
             <NuxtParticles id="tsparticles11" :options="options"></NuxtParticles>
             <div class="bg-[url('/pictures/girisimciler-header-image.webp')] bg-cover bg-center">
                 <div class="bg-black/50">
                     <PagesHeader />
                     <BreadCrumbsVue />
                 </div>
+            </div>
+            <div>
+                <EntrepreneurHero />
             </div>
         </div>
     </div>

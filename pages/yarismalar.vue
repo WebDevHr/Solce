@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="relative background-gradient-black-to-bottom">
+        <div class="relative">
             <NuxtParticles id="tsparticles11" :options="options"></NuxtParticles>
             <div class="bg-[url('/pictures/yarismalar-header-image.webp')] bg-cover bg-center">
                 <div class="bg-black/30">
