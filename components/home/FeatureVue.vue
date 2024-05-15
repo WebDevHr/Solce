@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden bg-white py-24 sm:py-32 bg-gradient-to-b from-[#06021f] to-transparent">
+    <div class="overflow-hidden bg-white py-24 sm:py-32 bg-gradient-to-b from-[#06021f] to-blue-500/40">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -10,8 +10,8 @@
                             Kitle Kaynak kullanımı, güvenilir ve sürekli yenilik için
                         </h1>
                         <p class="mt-6 text-lg leading-8 text-gray-300">
-                            Sorun çözücülerimizden oluşan crowd, 200'den fazla farklı projeye çözümler ve fikirler ile
-                            katkıda bulunmuştur.
+                            Çözümcülerimizden oluşan kitle, farklı sektörlerden projelere çözümler ve fikirler ile
+                            katkıda bulunmayı hedefliyoruz.
                         </p>
                         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-200 lg:max-w-none">
                             <div v-for="feature in features" :key="feature.name" class="relative pl-9">
@@ -48,12 +48,12 @@ const features = [
     },
     {
         name: 'Takımı oluştur',
-        description: 'Biz, katılım için engel olmayan açık bir platformuz. Crowd Oluşturma metodolojimiz bizi farklı kılar.',
+        description: 'Biz, katılım için engel olmayan açık bir platformuz. Kitle Oluşturma metodolojimiz bizi farklı kılar.',
         icon: UserGroupIcon,
     },
     {
         name: 'Toplama noktası',
-        description: 'Solce, ödül kaydı, yarışma başvuruları, çözüm ekibi oluşturma ve resmi değerlendirme için bir merkez olarak hizmet vermektedir.',
+        description: 'SOLCE, ödül kaydı, yarışma başvuruları, çözüm ekibi oluşturma ve resmi değerlendirme için bir merkez olarak hizmet vermektedir.',
         icon: ArrowsPointingInIcon,
     },
 ]

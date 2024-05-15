@@ -1,5 +1,6 @@
 <template>
-    <footer class="bg-white border-gray-200">
+    <footer class="bg-white border-gray-200 relative">
+        <NuxtParticles id="tsparticles-footer" :options="options"></NuxtParticles>
         <div class="bg-[#06021f]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div class="md:flex md:items-center md:justify-between">
@@ -97,5 +98,12 @@ const footerLinks = [
         ],
     },
 ];
+
+import options from '~/assets/particles/particles-nasa.json'
+
+import { loadFull } from 'tsparticles'
+if (process.client) {
+    await loadFull(tsParticles)
+}
 </script>
   

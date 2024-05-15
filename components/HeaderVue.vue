@@ -33,12 +33,17 @@
                                     leave-active-class="transition duration-150 ease-in"
                                     leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
                                     <PopoverPanel
-                                        class="absolute z-10 mt-[22px] border-t-8 border-sky-600 bg-white shadow-lg rounded-xl w-52 overflow-hidden focus:border-none"
+                                        class="absolute -left-1/3 z-10 mt-[22px] border-t-8 border-sky-600 bg-white shadow-lg rounded-xl w-52 overflow-hidden focus:border-none"
                                         v-slot="{ close }">
                                         <template v-for="subItem in item.subItems" :key="subItem.name">
                                             <nuxt-link :to="subItem.href" class="block px-4 py-2 text-sm hover:bg-gray-50"
                                                 @click="accept(close)">
-                                                {{ subItem.name }}
+                                                <div class="flex">
+                                                    <component :is="subItem.icon"
+                                                        class="h-6 w-6 text-sky-600 group-hover:text-sky-400"
+                                                        aria-hidden="true" />
+                                                    <div>{{ subItem.name }}</div>
+                                                </div>
                                             </nuxt-link>
                                         </template>
                                     </PopoverPanel>
@@ -152,8 +157,8 @@ const navItems = ref([
         name: 'ÜRÜNLER',
         href: '#',
         subItems: [
-            { name: 'YARIŞMALAR', description: 'Bir projeyi gerçekleştirmek mi istiyorsunuz?', href: '/yarismalar' },
-            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '/girisimcilere_destek' },
+            { name: 'YARIŞMALAR', description: 'Bir projeyi gerçekleştirmek mi istiyorsunuz?', href: '/yarismalar', icon: ArrowRightIcon },
+            { name: 'GİRİŞİMCİLERE DESTEK', description: 'Aklında bir fikir mi var?', href: '/girisimcilere_destek', icon: ArrowRightIcon },
         ],
     },
     { name: 'HAKKIMIZDA', href: '/hakkimizda' }

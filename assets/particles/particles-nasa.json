@@ -3,11 +3,11 @@
     "background": {
       "color": {
       },
-      "image": "",
-      "position": "",
-      "repeat": "",
-      "size": "",
-      "opacity": 0
+      "image": "url('')",
+      "position": "50% 50%",
+      "repeat": "no-repeat",
+      "size": "20%",
+      "opacity": 1
     },
     "backgroundMask": {
       "composite": "destination-out",
@@ -33,8 +33,8 @@
       "detectsOn": "window",
       "events": {
         "onClick": {
-          "enable": false,
-          "mode": []
+          "enable": true,
+          "mode": "repulse"
         },
         "onDiv": {
           "selectors": [],
@@ -44,7 +44,7 @@
         },
         "onHover": {
           "enable": true,
-          "mode": "trail",
+          "mode": "bubble",
           "parallax": {
             "enable": false,
             "force": 2,
@@ -58,44 +58,9 @@
       },
       "modes": {
         "trail": {
-          "delay": 0.005,
-          "pauseOnStop": true,
-          "quantity": 5,
-          "particles": {
-            "color": {
-              "value": "#ff0000",
-              "animation": {
-                "enable": true,
-                "speed": 400,
-                "sync": true
-              }
-            },
-            "collisions": {
-              "enable": false
-            },
-            "links": {
-              "enable": false
-            },
-            "move": {
-              "outModes": {
-                "default": "destroy"
-              },
-              "speed": 2
-            },
-            "size": {
-              "value": {
-                "min": 1,
-                "max": 5
-              },
-              "animation": {
-                "enable": true,
-                "speed": 5,
-                "sync": true,
-                "startValue": "min",
-                "destroy": "max"
-              }
-            }
-          }
+          "delay": 1,
+          "pauseOnStop": false,
+          "quantity": 1
         },
         "attract": {
           "distance": 200,
@@ -109,9 +74,11 @@
           "distance": 200
         },
         "bubble": {
-          "distance": 200,
-          "duration": 0.4,
+          "distance": 250,
+          "duration": 2,
           "mix": false,
+          "opacity": 0,
+          "size": 0,
           "divs": {
             "distance": 200,
             "duration": 0.4,
@@ -127,7 +94,7 @@
           "radius": 60
         },
         "grab": {
-          "distance": 100,
+          "distance": 400,
           "links": {
             "blink": false,
             "consent": false,
@@ -143,7 +110,7 @@
           "quantity": 2
         },
         "repulse": {
-          "distance": 200,
+          "distance": 400,
           "duration": 0.4,
           "factor": 100,
           "speed": 1,
@@ -215,15 +182,15 @@
         }
       },
       "color": {
-        "value": "#ff0000",
+        "value": "#ffffff",
         "animation": {
           "h": {
             "count": 0,
-            "enable": true,
-            "speed": 50,
+            "enable": false,
+            "speed": 1,
             "decay": 0,
             "delay": 0,
-            "sync": false,
+            "sync": true,
             "offset": 0
           },
           "s": {
@@ -300,7 +267,10 @@
         },
         "random": false,
         "size": false,
-        "speed": 2,
+        "speed": {
+          "min": 0.1,
+          "max": 1
+        },
         "spin": {
           "acceleration": 0,
           "enable": false
@@ -324,17 +294,17 @@
           "mode": "delete",
           "value": 0
         },
-        "value": 100
+        "value": 160
       },
       "opacity": {
         "value": {
-          "min": 0.3,
-          "max": 0.8
+          "min": 0.1,
+          "max": 1
         },
         "animation": {
           "count": 0,
           "enable": true,
-          "speed": 0.5,
+          "speed": 1,
           "decay": 0,
           "delay": 0,
           "sync": false,
@@ -368,8 +338,8 @@
         },
         "animation": {
           "count": 0,
-          "enable": true,
-          "speed": 3,
+          "enable": false,
+          "speed": 5,
           "decay": 0,
           "delay": 0,
           "sync": false,
@@ -490,11 +460,11 @@
       "links": {
         "blink": false,
         "color": {
-          "value": "random"
+          "value": "#fff"
         },
         "consent": false,
         "distance": 100,
-        "enable": true,
+        "enable": false,
         "frequency": 1,
         "opacity": 1,
         "shadow": {
@@ -529,7 +499,7 @@
     },
     "themes": [],
     "zLayers": 100,
-    "emitters": [],
+    "name": "NASA",
     "motion": {
       "disable": false,
       "reduce": {

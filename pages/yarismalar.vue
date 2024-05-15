@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="relative">
-            <NuxtParticles id="tsparticles11" :options="options"></NuxtParticles>
-            <div class="bg-[url('/pictures/yarismalar-header-image.webp')] bg-cover bg-center">
+        <div>
+            <div class="bg-[url('/pictures/yarismalar-header-image.webp')] bg-cover bg-center relative">
+                <NuxtParticles id="tsparticles11" :options="options"></NuxtParticles>
                 <div class="bg-black/30">
                     <PagesHeader />
                     <BreadCrumbsVue />
