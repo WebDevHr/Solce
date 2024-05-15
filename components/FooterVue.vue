@@ -11,7 +11,7 @@
                         </nuxt-link>
                         <p class="text-gray-200 text-base font-semibold ml-3">Sizin Fikirleriniz, Dünyamızı Şekillendiriyor.
                         </p>
-                        <div class="flex space-x-4 mt-16 justify-center text-white">
+                        <div class="flex space-x-4 lg:mt-16 mt-5 mb-20 md:mb-5 lg:justify-center text-white">
                             <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-500">
                                 <span class="sr-only">Instagram</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">

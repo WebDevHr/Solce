@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/globals.css',
+    'animate.css'
   ],
   googleFonts: {
     families: {

@@ -1,9 +1,9 @@
 <template>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h1>Yarışmaları Keşfet</h1>
-        <h1 class="my-5 text-xl">
+        <div class="my-5 text-xl font-semibold">
             Bir yarışma bul, çöz, fark yarat
-        </h1>
+        </div>
         <div class="flex justify-between">
             <h2>
                 İlgi alanına göre sırala

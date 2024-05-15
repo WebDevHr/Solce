@@ -6,7 +6,13 @@
   </NuxtLayout>
 </template>
 
+<script>
+import 'animate.css'
+</script>
+
 <style>
+@import url("animate.css");
+
 h1 {
   @apply text-3xl font-bold my-10;
   font-family: oswald;
