@@ -175,7 +175,7 @@ onUnmounted(() => {
 })
 
 async function accept(close) {
-    await fetch('/accept-terms', { method: 'POST' })
+    // await fetch('/accept-terms', { method: 'POST' })
     close()
 }
 </script>
