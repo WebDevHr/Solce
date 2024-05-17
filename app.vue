@@ -18,6 +18,11 @@ h1 {
   font-family: oswald;
 }
 
+h3 {
+  @apply text-xl font-bold my-5 text-gray-700;
+  font-family: oswald;
+}
+
 .font-family-oswald {
   font-family: oswald;
 }
