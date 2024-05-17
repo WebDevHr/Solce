@@ -4,7 +4,7 @@
             <div class="py-24 sm:py-32 bg-gradient-to-t from-[#06021f] to-transparent z-50">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
                     <div class="flex flex-col justify-center items-center">
-                        <h1 class="text-center font-semibold leading-8">
+                        <h1 class="text-center font-semibold leading-8 text-white">
                             Destek ve yatırımlarınız bizi güçlendirir
                         </h1>
                         <p class="text-lg text-center mx-auto max-w-3xl">

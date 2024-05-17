@@ -23,7 +23,7 @@
         <div class="bg-gradient-to-b from-[#06021f] to-transparent">
             <div class="bg-gradient-to-t from-[#06021f] to-transparent py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                    <h1 class="mb-20 xl:text-left text-center">Neden SOLCE mi dersiniz?</h1>
+                    <h1 class="mb-20 xl:text-left text-center text-white">Neden SOLCE mi dersiniz?</h1>
                     <div class="flex lg:flex-row flex-col flex-wrap gap-x-5 gap-y-10 xl:justify-between justify-center">
                         <div class="flex flex-col items-center lg:items-start">
                             <div

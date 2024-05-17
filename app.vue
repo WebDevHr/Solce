@@ -14,7 +14,7 @@ import 'animate.css'
 @import url("animate.css");
 
 h1 {
-  @apply text-3xl font-bold my-10;
+  @apply text-3xl font-bold my-10 text-gray-700;
   font-family: oswald;
 }
 
