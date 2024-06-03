@@ -1,3 +1,7 @@
+# Solution Center website 
+This website a crowdsourcing platform. People and mainly compnies share their problem and ask for help. Contenders will compete for the prize.
+
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
